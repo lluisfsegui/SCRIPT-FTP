@@ -29,13 +29,9 @@ ftp -inv "$FTP_SERVER" <<EOF
 EOF
 check_error "No s'ha pogut pujar el fitxer al servidor FTP."
 
-
 echo "Còpia de seguretat pujada correctament al servidor FTP."
-
-# Opcional: Esborrar el fitxer de còpia local després de pujar-lo
-# rm "$BACKUP_DIR/$BACKUP_NAME"
-
 echo "Procés completat."
+
 
 
 
