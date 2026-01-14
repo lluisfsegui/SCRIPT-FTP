@@ -1,5 +1,5 @@
 #!/bin/bash
-USER_HOME="/home/Lluis"          # Directori home de l'usuari
+USER_HOME="/home/root"          # Directori home de l'usuari
 BACKUP_DIR="/tmp/backups"            # Directori temporal per guardar la còpia
 FTP_SERVER="192.168.144.198"         # Adreça del servidor FTP
 FTP_USER="scriptFTP"                # Nom d'usuari del servidor FTP
@@ -42,5 +42,6 @@ echo "Còpia de seguretat pujada correctament al servidor FTP."
 # rm "$BACKUP_DIR/$BACKUP_NAME"
 
 echo "Procés completat."
+
 
 
