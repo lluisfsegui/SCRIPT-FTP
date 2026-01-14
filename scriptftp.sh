@@ -6,13 +6,7 @@ FTP_USER="scriptFTP"                # Nom d'usuari del servidor FTP
 FTP_PASSWORD="12345678"       # Contrasenya del servidor FTP
 BACKUP_NAME="$FTP_USER-backup_$(date +%Y%m%d).tar.gz"  # Nom del fitxer de còpia amb la data actual
 FTP_TARGET_DIR="backups"            # Directori al servidor FTP on es pujarà la còpia
-function check_error {
-    if [ $? -ne 0 ]; then
-        echo "Error: $1"
-        exit 1
-    fi
-    echo $?
-}
+
 # Crear el directori de còpies si no existeix
 mkdir -p "$BACKUP_DIR"
 echo "Directori creat correctament"
@@ -42,6 +36,7 @@ echo "Còpia de seguretat pujada correctament al servidor FTP."
 # rm "$BACKUP_DIR/$BACKUP_NAME"
 
 echo "Procés completat."
+
 
 
 
