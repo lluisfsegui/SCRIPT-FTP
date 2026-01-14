@@ -1,8 +1,8 @@
 #!/bin/bash
 USER_HOME="/root"          # Directori home de l'usuari
 BACKUP_DIR="/tmp/backups"            # Directori temporal per guardar la còpia
-FTP_SERVER="192.168.144.198"         # Adreça del servidor FTP
-FTP_USER="scriptFTP"                # Nom d'usuari del servidor FTP
+FTP_SERVER="192.168.144.197"         # Adreça del servidor FTP
+FTP_USER="root"                # Nom d'usuari del servidor FTP
 FTP_PASSWORD="12345678"       # Contrasenya del servidor FTP
 BACKUP_NAME="$FTP_USER-backup_$(date +%Y%m%d).tar.gz"  # Nom del fitxer de còpia amb la data actual
 FTP_TARGET_DIR="backups"            # Directori al servidor FTP on es pujarà la còpia
@@ -31,6 +31,7 @@ check_error "No s'ha pogut pujar el fitxer al servidor FTP."
 
 echo "Còpia de seguretat pujada correctament al servidor FTP."
 echo "Procés completat."
+
 
 
 
