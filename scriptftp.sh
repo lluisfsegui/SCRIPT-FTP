@@ -1,12 +1,12 @@
 #!/bin/bash
 
-USUARIO="usuario1"
+USUARIO="usuari_escriptura1"
 HOME_DIR="/home/$USUARIO"
 
 FECHA=$(date +"%Y-%m-%d_%H-%M")
 BACKUP_FILE="/tmp/${USUARIO}_backup_${FECHA}.tar.gz"
 
-FTP_SERVER="10.18.41.50"
+FTP_SERVER="10.18.30.162"
 FTP_USER="usuario_backup"
 FTP_PASS="12345678"
 FTP_DIR="ftp_backups"
@@ -23,3 +23,4 @@ EOF
 rm "$BACKUP_FILE"
 
 echo "Backup completado correctamente."
+
