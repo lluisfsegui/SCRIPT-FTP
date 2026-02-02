@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USUARIO="usuario1"
+USUARIO="engabiat3"
 HOME_DIR="/home/$USUARIO"
 
 FECHA=$(date +"%Y-%m-%d_%H-%M")
@@ -23,6 +23,7 @@ EOF
 rm "$BACKUP_FILE"
 
 echo "Backup completado correctamente."
+
 
 
 
